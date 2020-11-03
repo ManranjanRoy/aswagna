@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="56dp">
+  <ImageView
+      android:paddingLeft="15dp"
+      android:src="@drawable/pic_logo"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+       <ImageView
+           android:padding="5dp"
+           android:src="@drawable/icon56"
+           android:layout_marginRight="10dp"
+           android:layout_width="30dp"
+           android:layout_height="30dp"/>
+        <ImageView
+            android:padding="5dp"
+            android:src="@drawable/icon54"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:id="@+id/search"
+            android:padding="5dp"
+            android:src="@drawable/icon53"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:id="@+id/cart"
+            android:padding="5dp"
+            android:src="@drawable/icon55"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

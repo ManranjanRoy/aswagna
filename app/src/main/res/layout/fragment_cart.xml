@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CartFragment">
+
+   <include layout="@layout/app_bar_cart" android:id="@+id/appbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="Total : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:text="KD 12.640"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/add_button_border"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="05 Items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <LinearLayout
+        android:paddingHorizontal="10dp"
+        android:background="#9FDDDADA"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/icon36"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <TextView
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sold by "/>
+        <TextView
+            android:textColor="@color/view_profile"
+            android:textSize="14dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Natures Baby"/>
+    </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="10dp"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recyclercartproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:background="#9FDDDADA"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/icon34"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold by "/>
+            <TextView
+                android:textColor="@color/view_profile"
+                android:textSize="14dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfume Kuwait"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="10dp"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recyclercartproduct1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/add_tocart_border"
+            android:textAlignment="center"
+            android:text="Proceed To Checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
